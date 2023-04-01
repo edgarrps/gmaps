@@ -1,3 +1,4 @@
+import 'leaflet/dist/leaflet.css'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 
@@ -7,8 +8,8 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
             <MapContainer
                 center={[0, 0]}
                 zoom={3}
+                scrollWheelZoom={true}
                 style={{ height: '100%', width: '100%' }}
-                id='map'
             >
 
                 <TileLayer

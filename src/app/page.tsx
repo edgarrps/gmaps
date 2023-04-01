@@ -1,5 +1,4 @@
-'use client'
-import { Map } from '@/components/Map'
+import { Map } from "@/components/Map"
 
 export default function Home() {
   return (
@@ -8,3 +7,4 @@ export default function Home() {
     </>
   )
 }
+   
