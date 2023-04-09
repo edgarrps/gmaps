@@ -9,7 +9,7 @@ export const Map = () =>
         center={[-20.461473, -54.602045]}
         zoom={13}
         scrollWheelZoom={true}
-        style={{ height: '100%', width: '100%' }}
+        className='h-screen'
     >
         <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -17,7 +17,7 @@ export const Map = () =>
         />
         <Marker position={[-20.461473, -54.602045]}>
             <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
+                Project by Edgar Santos
             </Popup>
         </Marker>
     </MapContainer >
