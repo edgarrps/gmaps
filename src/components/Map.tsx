@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 export default function App() {
 
   const coord: [number, number] = [-15.822630, -47.920683]
+  
   return (
     <div>
       <MapContainer center={(coord)} zoom={3} className='h-screen'>
