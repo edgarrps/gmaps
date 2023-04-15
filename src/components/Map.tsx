@@ -10,7 +10,7 @@ export default function App() {
     <>
       <div className='flex h-[650px]'>
         <div className='flex-initial w-[400px] bg-stone-200'>
-          <Form/>
+          <Form />
         </div>
         <MapContainer center={(coord)} zoom={12} className='flex-1 w-64'>
           <TileLayer

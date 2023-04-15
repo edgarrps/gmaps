@@ -1,3 +1,7 @@
+import Input from "./Input"
+
 export default function Form () {
-    return(<></>)
+    return(
+<></>
+    )
 }
