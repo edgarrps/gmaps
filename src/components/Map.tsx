@@ -7,8 +7,8 @@ export default function App() {
   
   return (
     <div className='flex'>
-      <div className='w-[25%] h-[800px] bg-stone-200'/>
-      <MapContainer center={(coord)} zoom={3} className='h-[800px] w-[80%] bottom-[50%]'>
+      <div className='flex-initial w-[400px] h-[800px] bg-stone-200'/>
+      <MapContainer center={(coord)} zoom={3} className='flex-1 w-64 h-[800px] bottom-[50%]'>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
