@@ -8,9 +8,10 @@ export default function App() {
 
   return (
     <>
-      <div className='flex h-[650px]'>
+      <div className='flex h-screen'>
         <div className='flex-initial w-[400px] bg-stone-200'>
-          <Form />
+            <Form />
+            <div className='bg-blue-100'></div>
         </div>
         <MapContainer center={(coord)} zoom={12} className='flex-1 w-64'>
           <TileLayer
@@ -19,9 +20,9 @@ export default function App() {
           />
         </MapContainer>
       </div>
-      <div className='h-[230px] overflow-y-auto bg-blue-200'/>
-      </>
-      )
+      {/* <div className='h-[230px] overflow-y-auto bg-blue-200'/> */}
+    </>
+  )
 }
 
 
