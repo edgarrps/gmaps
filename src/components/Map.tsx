@@ -1,16 +1,14 @@
 'use client'
-import { MapContainer, TileLayer, useMap } from 'react-leaflet'
-// import Form from './Form'
-import LeafletControlGeocoder from "./Geocoder/LeafletControlGeocoder"
-import GetLocation from './Geocoder/GetLocation'
-import L from 'leaflet'
+import { MapContainer, TileLayer } from 'react-leaflet'
+import LeafletControlGeocoder from "./Location/LeafletControlGeocoder"
+import GetLocation from './Location/GetLocation'
 
 export default function App() {
 
   return (
     <>
       <div className='flex h-screen'>
-        <MapContainer center={[0,0]} zoom={3} className='flex-1 w-64' >
+        <MapContainer center={[0, 0]} zoom={3} className='flex-1 w-64' >
           <GetLocation />
           <LeafletControlGeocoder />
           <TileLayer
@@ -22,5 +20,3 @@ export default function App() {
     </>
   )
 }
-
-
