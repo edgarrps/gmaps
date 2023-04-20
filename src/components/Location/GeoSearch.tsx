@@ -1,21 +1,14 @@
-import { GeoSearchControl } from "leaflet-geosearch";
-import { useEffect } from "react";
-import { useMap } from "react-leaflet";
+import 'node_modules/leaflet-geosearch/dist/geosearch.css'
+import { OpenStreetMapProvider, GeoSearchControl } from 'leaflet-geosearch';
+import { useMap } from 'react-leaflet';
 
+export default function GeoSearch() {
+  const map = useMap()
+  const search = new (GeoSearchControl as any)({
+    provider: new OpenStreetMapProvider(),
+    placeholder: 'Pesquise aqui...'
+  })
+  map.addControl(search)
 
-
-export default function SearchControl () {
-    // const map = useMap()
-  
-    // useEffect(() => {
-    //   const searchControl = new (GeoSearchControl as any)({
-    //   })
-  
-    //   map.addControl(searchControl);
-    //   return () => map.removeControl(searchControl);
-    // }, [])
-  
-    return null
-  }
-  
-
+  return null
+}
