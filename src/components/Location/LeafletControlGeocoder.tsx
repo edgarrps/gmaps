@@ -41,4 +41,3 @@ export default function LeafletControlGeocoder() {
     return null
 }
 
-//https://codesandbox.io/s/using-leaflet-control-geocoder-with-react-leaflet-v3x-63wqz?file=/src/App.js
